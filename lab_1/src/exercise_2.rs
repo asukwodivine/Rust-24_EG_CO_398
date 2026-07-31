@@ -19,7 +19,7 @@ pub fn run() {
  //      that return a slice of the first word
  //      call it here and print the result.
 }
- fn claculate_length(s: &Str) -> usize{
+ fn claculate_length(s: &str) -> usize{
      s.len()   // s is borrowed; not dropped at end of scope 
  }
 
