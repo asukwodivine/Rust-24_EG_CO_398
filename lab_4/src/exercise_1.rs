@@ -18,7 +18,7 @@ pub fn run() {
     let (mean, min, max) = stats(&scores);
     println!("Mean={:.2} Min={:.2} Max={:.2}", mean, min, max);
 
-    let median = if scores.len().is_multiple_of(2){
+    let median = if scores.len().is_multiple_of(2) {
         (scores[scores.len() / 2 - 1] + scores[scores.len() / 2]) / 2.0
     } else {
         scores[scores.len() / 2]
